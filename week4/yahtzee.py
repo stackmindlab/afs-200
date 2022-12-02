@@ -1,5 +1,4 @@
 import random
-dice = []
 class Die:
     SIDES = ['🎲', '⚀', '⚁', '⚂', '⚃', '⚄', '⚅']
 
