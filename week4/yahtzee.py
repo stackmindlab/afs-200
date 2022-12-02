@@ -1,7 +1,8 @@
 import random
 dice = []
 class Die:
-    SIDES = ['⚀', '⚁', '⚂', '⚃', '⚄', '⚅']
+    SIDES = ['🎲', '⚀', '⚁', '⚂', '⚃', '⚄', '⚅']
+
     def __init__(self, sides, value = 1):
         self.sides = sides
         self.value = value
@@ -21,7 +22,7 @@ def rollFive(sides1, sides2, sides3, sides4, sides5):
         die.roll()
         print(f"{die.showDieFace()} ({die.getCurrentFaceValue()})", end =" ")
        
-rollFive(1, 1, 1, 3, 1)
+rollFive(1, 2, 1, 3, 1)
 
 def rollForYahtzee(dice) :
     if all(die == dice[0] for die in dice):
